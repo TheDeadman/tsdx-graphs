@@ -7,14 +7,14 @@ import {
     ArgsTable,
     Stories,
     PRIMARY_STORY,
-  } from '@storybook/addon-docs';
+} from '@storybook/addon-docs';
 import { Meta, Story } from '@storybook/react';
 import { BarGraph, BarGraphProps } from './BarGraph';
 
 // import BarGraphMDX from './BarGraph.mdx';
 
 const meta: Meta = {
-    title: 'Components/BarGraph',
+    title: 'Graphs/BarGraph',
     component: BarGraph,
     argTypes: {
         entries: {
@@ -32,14 +32,14 @@ const meta: Meta = {
         docs: {
             page: () => (
                 <>
-                  <Title />
-                  <Subtitle />
-                  <Description />
-                  <Primary />
-                  <ArgsTable story={PRIMARY_STORY} />
-                  <Stories />
+                    <Title />
+                    <Subtitle />
+                    <Description />
+                    <Primary />
+                    <ArgsTable story={PRIMARY_STORY} />
+                    <Stories />
                 </>
-              ),
+            ),
         }
     },
 };
@@ -59,5 +59,5 @@ export const ExplicitMaxVal = Template.bind({});
 ExplicitMaxVal.args = {
     maxValue: 9,
     minValue: 1,
-    entries: [{label: "Entry One", value: 3}, {label: "Entry Two", value: 7}]
+    entries: [{ label: "Entry One", value: 3 }, { label: "Entry Two", value: 7 }]
 }

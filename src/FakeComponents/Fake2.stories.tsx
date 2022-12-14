@@ -1,35 +1,35 @@
 import React from 'react';
 import {
-    Title,
-    Subtitle,
-    Description,
-    Primary,
-    ArgsTable,
-    Stories,
-    PRIMARY_STORY,
-  } from '@storybook/addon-docs';
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  ArgsTable,
+  Stories,
+  PRIMARY_STORY,
+} from '@storybook/addon-docs';
 import { Meta, Story } from '@storybook/react';
 
 // import BarGraphMDX from './BarGraph.mdx';
 const FakeComponent = () => <div>Fake Component</div>;
 const meta: Meta = {
-    title: 'Components/Column Chart',
-    component: <FakeComponent />,
-    parameters: {
-        controls: { expanded: true },
-        docs: {
-            page: () => (
-                <>
-                  <Title />
-                  <Subtitle />
-                  <Description />
-                  <Primary />
-                  <ArgsTable story={PRIMARY_STORY} />
-                  <Stories />
-                </>
-              ),
-        }
-    },
+  title: 'CompGraphsonents/Column Chart',
+  component: <FakeComponent />,
+  parameters: {
+    controls: { expanded: true },
+    docs: {
+      page: () => (
+        <>
+          <Title />
+          <Subtitle />
+          <Description />
+          <Primary />
+          <ArgsTable story={PRIMARY_STORY} />
+          <Stories />
+        </>
+      ),
+    }
+  },
 };
 
 export default meta;
